@@ -161,6 +161,51 @@ public class Logic
     }
 
     // TODO -- add your code here
+    public static double rectangleArea(double mLength, double mWidth){
+        double rectArea = mLength * mWidth;
+        return rectArea;
+    }
+    public static double rectanglePerimeter(double mLength, double mWidth){
+        double perimeter = 2*(mLength + mWidth);
+        return perimeter;
+    }
+    public static double circleArea(double mRadius){
+        double circleArea = Math.PI * mRadius * mRadius;
+        return circleArea;
+
+    }
+    public static double circleCircumference(double mRadius){
+        double circumference = 2 * Math.PI * mRadius;
+        return circumference;
+    }
+    public static double rightTriangleArea(double mLength, double mWidth){
+        double rtArea = 0.5 * mLength * mWidth;
+        return rtArea;
+    }
+    public static double rightTrianglePerimeter(double mLength, double mWidth){
+        double hypo = Math.sqrt(Math.pow(mLength,2)+Math.pow(mWidth,2));
+        double rtPerimeter = mLength + mWidth + hypo;
+        return rtPerimeter;
+    }
+    public static double boxVolume(double mLength, double mWidth, double mHeight){
+        double volume = mLength * mWidth * mHeight;
+        return volume;
+    }
+    public static double boxSurfaceArea(double mLength, double mWidth,
+                                        double mHeight){
+        double sArea = 2 * mLength *mWidth + 2* mLength * mHeight + 2* mWidth * mHeight;
+        return sArea;
+
+    }
+    public static double sphereVolume(double mRadius){
+        double sVolume = (4.0/3.0) * Math.PI * Math.pow(mRadius,3);
+        return sVolume;
+    }
+    public static double sphereSurfaceArea(double mRadius){
+        double sphereSA = 4 * Math.PI * mRadius * mRadius;
+        return sphereSA;
+    }
+
 
 
 }
